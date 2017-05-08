@@ -88,7 +88,7 @@ for file in os.listdir(directory):
     
 #for batch_idx in range(10):
 #perform the transformations
-'''
+
 #rotation
 images_aug.append(rotate3.augment_images(images))
 images_aug.append(rotate2.augment_images(images))
@@ -107,9 +107,9 @@ images_aug.append(flip2.augment_images(images))
 images_aug.append(multiply.augment_images(images))
 #blur
 images_aug.append(blur.augment_images(images))
-
+#contrast
 images_aug.append(contrast.augment_images(images))
-'''
+#shear
 images_aug.append(shear1.augment_images(images))
 images_aug.append(shear2.augment_images(images))
 images_aug.append(shear3.augment_images(images))
